@@ -1,13 +1,29 @@
 #include <iostream>
 
 #include "cppDyz/include/TestOne.h"
+#include "cppDyz/include/TestVirtual.h"
 
-
+using namespace VirtualTestNamespace;
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
 
 //    TestOne::testOneTestFunction();
+
+    // 5、virtual 虚函数
+//    在 C++ 中，`virtual` 是一个关键字，用于声明虚函数。虚函数是一种特殊的成员函数，可以在派生类中重写并实现不同的行为，从而实现基类多态性。
+//    在 C++ 中，如果一个成员函数被声明为虚函数，那么每个派生类都可以重写该函数，并且在运行时会调用它自己的实现。这样一来，可以在基类中定义通用的行为，而在派生类中实现特定的行为，从而实现基类多态性。
+//    虚函数 在基类中必须 实现，如下，不能只声明 如 "virtual void DoTask();"
+//    TestVirtual* company = new TestVirtual();// 由于TestVirtual是虚类，所不能"new TestVirtual();"
+
+//    TestVirtual* company;
+//    TestVirtualIME ime = TestVirtualIME();
+//    TestVirtualXM xm = TestVirtualXM();
+//    TestVirtualSS ss = TestVirtualSS();
+////    company = &ime;
+////    company = &xm;
+//    company = &ss;
+//    company->DoTask();
 
     // 4、std::nothrow
 //    在 C++ 中，`std::nothrow` 是一个特殊的标志符号，用于在内存分配操作中禁用抛出异常的行为。

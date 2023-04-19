@@ -17,10 +17,11 @@ public:
 
     void testPrint();
 
-    TestOne();// 构造函数
+    TestOne();// 默认构造函数
     TestOne(std::string parameter1, int parameter2):name(parameter1),age(parameter2) {
 
-    };// 构造函数
+    };// 构造函数1
+    TestOne(std::string parameter); // 构造函数2
 
     std::string name;
 private:

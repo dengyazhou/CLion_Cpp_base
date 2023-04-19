@@ -53,10 +53,15 @@ TestOne::TestOne() {
 
 }
 
+TestOne::TestOne(std::string parameter):name(parameter) {
+
+}
+
 void TestOne::testTestOne() {
     std::cout << "TestOne::testTestOne 被执行了" << std::endl;
 //    TestOne obj = TestOne();
-    TestOne obj = TestOne("小明", 23);
+//    TestOne obj = TestOne("小明", 23);
+    TestOne obj = TestOne("小迈");
     testTestO(obj);
 //
 //    TestOne obj1 = TestOne();

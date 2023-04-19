@@ -2,13 +2,24 @@
 
 #include "cppDyz/include/TestOne.h"
 #include "cppDyz/include/TestVirtual.h"
+#include "cppDyz/include/TestMutex.h"
 
 using namespace VirtualTestNamespace;
+using namespace MutexTestNamespace;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello, World 123 !" << std::endl;
 
-//    TestOne::testOneTestFunction();
+    TestOne::testOneTestFunction();
+
+    // 6、mutex 和 thread
+//    在C++中，Mutex是一种互斥锁机制，用于控制多个线程之间的并发执行，防止同时访问共享资源而导致的数据竞争问题。Mutex通常在多线程编程中用于实现线程同步，保证线程之间的协调和安全性。
+//    下面是使用C++ Mutex进行多线程编程的基本步骤：
+//    1. 创建Mutex对象。可以使用std::mutex类创建一个新的Mutex对象。
+//    2. 获取Mutex对象。可以使用std::mutex::lock函数获取Mutex对象的锁，如果Mutex已经被其他线程持有，则当前线程会被阻塞，等待Mutex对象的释放。
+//    3. 释放Mutex对象。可以使用std::mutex::unlock函数释放Mutex对象的锁，使其他线程可以获取和使用Mutex对象。
+//    TestMutex::TestMain();
+//    std::this_thread::sleep_for(std::chrono::milliseconds(10000));//sleep一下是为了程序不退出。都这其他线程没法执行完毕。
 
     // 5、virtual 虚函数
 //    在 C++ 中，`virtual` 是一个关键字，用于声明虚函数。虚函数是一种特殊的成员函数，可以在派生类中重写并实现不同的行为，从而实现基类多态性。

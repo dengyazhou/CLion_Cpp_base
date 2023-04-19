@@ -33,6 +33,7 @@ namespace MutexTestNamespace {
 
     void TestMutex::ThreadCallBackStatic() {
         m_lock.lock();//类似 iOS 的 dispatch_semaphore_wait，两个lock()会卡住当前线程。
+        // 可以对比 加lock和没加lock，下面的打印日志，没加lock打印都乱了，加了lock是正常打印。所以说多条线程访问同一块代码，一定要加锁。
 
         __thread_id threadId = this_thread::get_id();
         cout << "多线程回调 ThreadCallBackStatic 被执行了 0" << " === " << threadId << endl;

@@ -15,10 +15,30 @@ int main() {
 
     TestOne::testOneTestFunction();
 
-    // 7、pthread_mutex_t
-    TestPthread_mutex::TestMain();
-    this_thread::sleep_for(chrono::milliseconds(10000));//sleep一下是为了程序不退出。否则其他线程没法执行完毕。
+    // 9、strcmp 和 strlen
+    // strcmp: 函数接受两个参数，分别是要比较的两个字符串，返回值是一个整数。如果字符串相等，返回 0；如果第一个字符串小于第二个字符串，返回一个负整数；如果第一个字符串大于第二个字符串，返回一个正整数
+    // strlen: 获取字符串长度
+//    char str1[] = "Hello";
+//    char str2[] = "hello";
+//    cout << "str1: " << str1 << " count:" << strlen(str1) << endl;
+//    int result = ::strcmp(str1, str2);
+//    if (result == 0) {
+//        cout << "两个字符串相等" << endl;
+//    } else if (result < 0) {
+//        cout << "str1 小于 str2" << endl;
+//    } else {
+//        cout << "str1 大于 str2" << endl;
+//    }
 
+
+    // 8、do while
+//    do {
+//        cout << "do while 执行啦" << endl;
+//    } while (0);
+
+    // 7、pthread_mutex_t
+//    TestPthread_mutex::TestMain();
+//    this_thread::sleep_for(chrono::milliseconds(10000));//sleep一下是为了程序不退出。否则其他线程没法执行完毕。
 
     // 6、mutex 和 thread
 //    在C++中，Mutex是一种互斥锁机制，用于控制多个线程之间的并发执行，防止同时访问共享资源而导致的数据竞争问题。Mutex通常在多线程编程中用于实现线程同步，保证线程之间的协调和安全性。

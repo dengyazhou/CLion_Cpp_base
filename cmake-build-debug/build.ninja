@@ -58,6 +58,24 @@ build CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestOne.cpp.o: CXX_COMPILER__CLio
   OBJECT_DIR = CMakeFiles/CLion_Cpp_base.dir
   OBJECT_FILE_DIR = CMakeFiles/CLion_Cpp_base.dir/cppDyz/src
 
+build CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestVirtual.cpp.o: CXX_COMPILER__CLion_Cpp_base_Debug /Users/thinkingdata-yazhou/Desktop/yazhou/CLion_Cpp_base/cppDyz/src/TestVirtual.cpp || cmake_object_order_depends_target_CLion_Cpp_base
+  DEP_FILE = CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestVirtual.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/CLion_Cpp_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/CLion_Cpp_base.dir/cppDyz/src
+
+build CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestMutex.cpp.o: CXX_COMPILER__CLion_Cpp_base_Debug /Users/thinkingdata-yazhou/Desktop/yazhou/CLion_Cpp_base/cppDyz/src/TestMutex.cpp || cmake_object_order_depends_target_CLion_Cpp_base
+  DEP_FILE = CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestMutex.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/CLion_Cpp_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/CLion_Cpp_base.dir/cppDyz/src
+
+build CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestPthread_mutex.cpp.o: CXX_COMPILER__CLion_Cpp_base_Debug /Users/thinkingdata-yazhou/Desktop/yazhou/CLion_Cpp_base/cppDyz/src/TestPthread_mutex.cpp || cmake_object_order_depends_target_CLion_Cpp_base
+  DEP_FILE = CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestPthread_mutex.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/CLion_Cpp_base.dir
+  OBJECT_FILE_DIR = CMakeFiles/CLion_Cpp_base.dir/cppDyz/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CLion_Cpp_base
@@ -66,7 +84,7 @@ build CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestOne.cpp.o: CXX_COMPILER__CLio
 #############################################
 # Link the executable CLion_Cpp_base
 
-build CLion_Cpp_base: CXX_EXECUTABLE_LINKER__CLion_Cpp_base_Debug CMakeFiles/CLion_Cpp_base.dir/main.cpp.o CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestOne.cpp.o
+build CLion_Cpp_base: CXX_EXECUTABLE_LINKER__CLion_Cpp_base_Debug CMakeFiles/CLion_Cpp_base.dir/main.cpp.o CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestOne.cpp.o CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestVirtual.cpp.o CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestMutex.cpp.o CMakeFiles/CLion_Cpp_base.dir/cppDyz/src/TestPthread_mutex.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
   OBJECT_DIR = CMakeFiles/CLion_Cpp_base.dir
   POST_BUILD = :
